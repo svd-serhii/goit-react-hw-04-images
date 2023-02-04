@@ -16,7 +16,7 @@ const App = () => {
   const [images, setImages] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  // const [error, setError] = useState(null);
+
   const [currentLargeImg, setCurrentLargeImg] = useState('');
   const [currentTagImg, setCurrentTagImg] = useState('');
   const [showButton, setShowButton] = useState(false);
