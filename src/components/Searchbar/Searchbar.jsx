@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import PropTypes from 'prop-types';
-import css from './SearchBar.module.css';
+import css from './Searchbar.module.css';
 import { FaSistrix } from 'react-icons/fa';
 
-const SearchBar = ({ onSubmit }) => {
+const Searchbar = ({ onSubmit }) => {
   const [request, setRequest] = useState('');
 
   const handleChange = event => {
@@ -48,11 +48,11 @@ const SearchBar = ({ onSubmit }) => {
   );
 };
 
-SearchBar.propTypes = {
+Searchbar.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
 
-export default SearchBar;
+export default Searchbar;
 
 // class Searchbar extends Component {
 //   state = {

@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { fetchImg } from 'components/services/api';
 import css from './App.module.css';
 
-import SearchBar from 'components/SearchBar';
+import Searchbar from 'components/Searchbar';
 import ImageGallery from 'components/ImageGallery';
 import Button from 'components/Button';
 import Loader from 'components/Loader';
@@ -95,7 +95,7 @@ const App = () => {
 
   return (
     <div className={css.App}>
-      <SearchBar onSubmit={handleSearchSubmit} />
+      <Searchbar onSubmit={handleSearchSubmit} />
       {images && <ImageGallery images={images} openModal={openModal} />}
       {isLoading && <Loader />}
       {showButton && (
